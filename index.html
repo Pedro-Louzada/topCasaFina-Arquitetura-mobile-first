@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopCasaFina-Arquitetura</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container"> <!--espaçamento-->
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navegation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">TopCasaFina Arquitetura</a>
+                </div>
+    
+                <div class="collapse navbar-collapse" id="collapse-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#sobre-nos">Sobre Nós</a></li>
+                        <li><a href="#nossos-projetos">Nossos Projetos</a></li>
+                        <li><a href="#depoimentos">Depoimento de Clientes</a></li>
+                        <li><a href="#video">Vídeo Institucional</a></li>
+                        <li><a href="#contatos">Contato</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container topCasafina-bannerWrapper">
+            <div class="topcasafina-banner">
+                <h1>TopCasaFina Arquitetura</h1>
+                <p>Projetando a casa dos sonhos desde 2000 A.C</p>
+                <button class="btn btn-primary btn-lg">Contate-nos agora</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-nos" class="container">
+        <h2 style="font-weight:bold;">Sobre Nós</h2> 
+        <div class="row">
+            <img class="img-responsive col-sm-6" src="img/empresa.jpg" alt="">
+            
+            <div class="panel-group col-sm-6" id="paineis-sobre"><!--panel-group serve para juntarmos todos os panels-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo" data-parent="#paineis-sobre">Desde 1935</h3>
+                    </div>
+                    <div id="primeiro-paragrafo" data-target class="collapse in"> <!--div criado para retirar o padding do elemento quando eu for collapsar-->
+                        <div class="panel-body">
+                            <p>Desde 1935 trazendo casas, mansões e prédios lindos para todo mundo</p> 
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" data-toggle="collapse" data-target="#segundo-paragrafo" data-parent="#paineis-sobre">Preços acessíveis</h3>
+                    </div>
+                    <div id="segundo-paragrafo" class="collapse"> 
+                        <div class="panel-body">
+                            <p>Preços a partir de R$ 1.000,00.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" data-toggle="collapse" data-target="#terceiro-paragrafo" data-parent="#paineis-sobre">Algeria para colaborar com um mundo mais bonito</h3>
+                    </div>
+                    <div id="terceiro-paragrafo" class="collapse">
+                        <div class="panel-body">
+                            <p>Trazendo alegria para as pessoas que tem dinheiro para gastar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <div class="jumbotron">
+        <div class="container">
+            <h3 style="font-weight:bold;">Mais de 300 prêmios em design e em conforto.</h3>
+            <p>Mais de 5 milhões de clientes satisfeitos em todo o mundo.</p>
+        </div>
+    </div>
+    
+    <section id="nossos-projetos" class="container">
+        <h2 style="font-weight:bold;">Nossos projetos</h2>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <figure class="thumbnail"> <!--tag figure usada para demonstrar que tem uma figura -->
+                    <img src="img/projetos/casa-castelo.png" alt="casa-castelo">
+                    <figcaption class="caption"> <!--tag figcaption é usada para quando vamos colocar uma legenda numa imagem, fica mais semântico  -->
+                        <h3>Casa Castelo</h3>
+                        <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita  para um monge.</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3"> <!--coloquei esta classe para repartir o grid em 50% 50%, só que tivemos que colocar numa div externa porq se colocarmos a classe na figure tem conflitos entre os paddings-->
+                <figure class="thumbnail"> <!--tag figure usada para demonstrar que tem uma figura -->
+                    <img src="img/projetos/casa-lago.png" alt="casa-lago">
+                    <figcaption class="caption"> <!--tag figcaption é usada para quando vamos colocar uma legenda numa imagem, fica mais semântico  -->
+                        <h3>Casa Lago</h3>
+                        <p>A Casa do Lago foi lar de inúmeras pessoas que conheciam o presidente na época.</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <figure class="thumbnail"> <!--tag figure usada para demonstrar que tem uma figura -->
+                    <img src="img/projetos/mercado-marapira.png" alt="mercado-marapira">
+                    <figcaption class="caption"> <!--tag figcaption é usada para quando vamos colocar uma legenda numa imagem, fica mais semântico  -->
+                        <h3>Mercado Marapira</h3>
+                        <p>O Mercado Marapira foi projetado nos mínimos detalhes na arquitetura baseada em frutas.</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <figure class="thumbnail"> <!--tag figure usada para demonstrar que tem uma figura -->
+                    <img src="img/projetos/palacio-dionisio.png" alt="palacio-dionisio">
+                    <figcaption class="caption"> <!--tag figcaption é usada para quando vamos colocar uma legenda numa imagem, fica mais semântico  -->
+                        <h3>Palacio dionisio</h3>
+                        <p>0 palácio Dionísio foi eleito pela revista 'Grandes palácios' como o palácio mais lindo do mundo.</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <figure class="thumbnail"> <!--tag figure usada para demonstrar que tem uma figura -->
+                    <img src="img/projetos/residencia-ludi.png" alt="residencia-ludi">
+                    <figcaption class="caption"> <!--tag figcaption é usada para quando vamos colocar uma legenda numa imagem, fica mais semântico  -->
+                        <h3>Residencial Ludi</h3>
+                        <p>A residência Ludi. fo1 projetada para ser a mais bela casa de São Paulo pela revista Housing.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </section>
+    
+    <section id="depoimentos">
+        <h2 class="container titulo-depoimentos">Depoimentos de Clientes</h2>
+        
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!--Indicadores-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0"
+                class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active"> <!--class active indica que quando der um reload na página esse sempre vai ser oq foi ativo primeiro-->
+                    <img src="img/depoimentos/depoimento1.png">
+                    <div class="carousel-caption">
+                        <h3>Yuri Padilha</h3>
+                        <p>Gostei muito e achei rápido o serviço.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/depoimentos/depoimento2.png" alt="">
+                    <div class="carousel-caption">
+                        <h3>Fernando Stafaneni</h3>
+                        <p>Execelente trabalho.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/depoimentos/depoimento3.png" alt="">
+                    <div class="carousel-caption">
+                        <h3>Caio Souzas</h3>
+                        <p>Gostei, competência em primeiro lugar.</p>
+                    </div>
+                </div>
+            </div>
+            <!--Controls-->
+            <a class="left carousel-control" href="#carousel-example-generic"
+            role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic"
+        role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</section>
+
+<div class="container">
+    <div class="row">
+            <section id="video" class="col-sm-6">
+                <h2>Vídeo Institucional</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8dFeeSCGExg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section id="contatos" class="col-sm-6">
+                <h2>Contatos</h2>
+                <p>Entre em contato conosco</p>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input class="form-control" id="nome" type="text" placeholder="Seu nome">
+                        
+                        <label for="email">Email:</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">@</div>
+                            <input class="form-control" id="email" type="email" placeholder="Seu e-mail">
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="grupo-radio"> <!--DIV criada para colocar as checkbox ao lado do selected-->
+                    <div class="radio">
+                        <label>
+                            <input checked type="radio" name="tipo-de-pessoa" id=""> <!--colocamos a mesma classe nos dois input para que quando um for selecionado o anterior tire a seleção-->
+                            Pessoa Física
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="tipo-de-pessoa" id="">
+                            Pessoa Jurídica
+                        </label>
+                    </div>
+                </div><!--
+                    TEMOS QUE COLOCAR ESTE ESPAÇO PARA IR UM AO LADO DO OUTRO E NÃO BUGAR
+                --><select class="grupo-selected form-control">
+                    <option disabled selected value="">Tipo de Solicitação</option> <!--disabled desabilita uma opção, porém para ele não sumir colocamos um selected-->
+                    <option value="">Casa</option>
+                    <option value="">Apartamento</option>
+                    <option value="">Mansão</option>
+                </select>
+                
+                <button type="submit" class="btn btn-primary">
+                    Enviar
+                </button>
+            </section>
+        </div>
+    </div>
+<footer>
+    <address>
+        <strong>TopCasaFina Arquitetura</strong><br>
+        Rua Vergueir0, 3185, Vila Mariana<br>
+        São Paulo, SP<br>
+        Tel: (11) 5571-2751 ou 5083-3884
+    </address>
+    
+    <address>
+        E-mail: contato.topcasafina@alura.com.br
+    </address>
+</footer>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js">
+</script>
+<script src="bootstrap/js/navbar-animation-fix.js"></script>
+
+</body>
+</html>
